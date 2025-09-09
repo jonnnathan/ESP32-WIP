@@ -270,6 +270,19 @@ int getGPSSecond() {
   return g_second;
 }
 
+// ===== GPS Altitude Functions =====
+
+float getGPSAltitude() {
+  if (gps.altitude.isValid()) {
+    return gps.altitude.meters();
+  }
+  return -999.0f; // Invalid reading
+}
+
+bool isAltitudeValid() {
+  return gps.altitude.isValid();
+}
+
 // ===== Formatting Helper Functions =====
 
 String getFormattedTime12Hour() {

@@ -53,8 +53,8 @@ https://blog.embeddedexpert.io/?p=758
 SHT30 Temperature And Humidity Sensor
 -----------------------
 1     2    3     4
-GND   VCC  SDA   SCL
-
+GND   VCC  SDA   SCL        ADDR : 0x44
+GND   5.5  7    20
 BLACK RED  WHITE YELLOW
 -----------------------
 
@@ -65,5 +65,5 @@ BLACK RED  WHITE YELLOW
 BMP180 Barometric Pressure/Temperature/Altitude Sensor
 ------------------------------------------------------
 VIN   GND   SCL   SDA       ADDR : 0x77
-3.3V  GND   20    19
+3.3V  GND   20    7
 ----------------------------------------------

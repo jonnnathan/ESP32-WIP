@@ -42,6 +42,10 @@ int getGPSHour();
 int getGPSMinute();
 int getGPSSecond();
 
+// GPS Altitude functions
+float getGPSAltitude();
+bool isAltitudeValid();
+
 // Format helpers
 String getFormattedTime12Hour();
 String getFormattedTime24Hour();
